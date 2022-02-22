@@ -1,0 +1,21 @@
+
+:root {
+        --main: #e94e77;
+        --primairy: #d68189;
+        --secondary: #c6a49a;
+        --tertairy: #c6e5d9;
+        --quaternary: #f4ead5;
+}
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 400px;
+    background-color: #e94e77;
+}
