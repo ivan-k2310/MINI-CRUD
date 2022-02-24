@@ -19,3 +19,86 @@ body {
     height: 400px;
     background-color: #e94e77;
 }
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://wallpaperbat.com/img/341498-let-us-have-sushi-as-wallpaper-instead-3840x2160-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* navbar */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+
+}
+.logoOrName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.navSpaceBetween {
+    width: 45%;
+    height: 100%;
+}
+.navLinkBox {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+
+}
+
+.navBoxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33%;
+}
+
+li, a {
+    text-decoration: none;
+    list-style: none;
+    font-size: larger;
+}
+
+/* navbarHover */
+.navbar li a {
+    transition: 0.5s;
+    color: var(--ivory);
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    transition: 0.5s;
+    transform: scale();
+    color: var(--primairy);
+}
+
+.welcomeTextBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+/* navbarHover */
+/* navbar */
+
+/* container */
+.container {
+    width: 100%;
+    height: 400px;
+}
