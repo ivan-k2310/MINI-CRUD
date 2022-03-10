@@ -12,32 +12,34 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     width: 100%;
     height: 400px;
-    background-color: #e94e77;
+    background-color: gray;
 }
 main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-image: url(https://wallpaperbat.com/img/341498-let-us-have-sushi-as-wallpaper-instead-3840x2160-wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 /* navbar */
 nav {
+    padding-top: 100px;
     display: flex;
     align-items: center;
 }
 
 .navbar {
+    padding-top: 100px;
     width: 100%;
-    height: 70px;
-
+    height: 5vh;
 }
 .logoOrName {
     display: flex;
@@ -86,13 +88,39 @@ li, a {
     color: var(--primairy);
 }
 
-.welcomeTextBox {
+.backgroundContainer {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 95vh;
 }
+
+.contentBox {
+    margin-left: 100px;
+    margin-top: 50px;
+    height: 90vh;
+    width: 40%;
+}
+
+.contenBoxTitle{
+    width: 100%;
+    height: 10%;
+    margin: 15px;
+}
+
+.title{
+    font-size: 60px;
+    color: gold;
+}
+
+.contentBoxTextBox{
+    width: 100%;
+    height: 90%;
+    margin: 15px;
+    font-size: 35px;
+}
+
+
 /* navbarHover */
 /* navbar */
 
