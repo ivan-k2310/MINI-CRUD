@@ -17,10 +17,12 @@
         <!-- background image -->
         <nav class="navbar">
             <div class="logoOrName">
-                <li><a href="#.php">link</a></li>
+                <li><a href="index.php">link</a></li>
             </div>
             <div class="navSpaceBetween">
-
+                <div class="contenBoxTitle">
+                    <a class="title">sushi place</a>
+                </div>
             </div>
             <div class="navLinkBox">
                 <div class="navBoxes">
@@ -35,28 +37,16 @@
             </div>
         </nav>
         <div class="backgroundContainer">
-            <div class="contentBox">
-                <div class="contenBoxTitle">
-                    <a class="title">sushi place</a>
-                </div>
-                <div class="contentBoxTextBox">
-                    <p class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Praesent aliquet urna nec dignissim varius.
-                        Nulla commodo enim sit amet mauris porta ultricies.
-                        Praesent nec velit eros. Sed pharetra facilisis arcu, in tempus ipsum vulputate non. <br>
-                        Praesent maximus, nisi a maximus efficitur, augue lorem tristique metus, in fringilla ligula
-                        enim a erat.
-                        Morbi consectetur vulputate ante. Nullam efficitur dui ac nunc hendrerit, ut venenatis mi porta.
-                        In quis posuere lacus. Donec sed dignissim est, eu euismod leo.</p>
-                    <br>
-
-                </div>
-            </div>
         </div>
     </main>
     <div class="container">
+        <!-- info over site en restaurant -->
+        <div class="imageWelcome">
 
+        </div>
+        <div class="textWelcome">
+            
+        </div>
     </div>
 </body>
 
