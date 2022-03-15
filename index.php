@@ -12,30 +12,13 @@
 </head>
 
 <body>
-
     <main>
         <!-- background image -->
-        <nav class="navbar">
-            <div class="logoOrName">
-                <li><a href="index.php">link</a></li>
-            </div>
-            <div class="navSpaceBetween">
-                <div class="contenBoxTitle">
-                    <a class="title">sushi place</a>
-                </div>
-            </div>
-            <div class="navLinkBox">
-                <div class="navBoxes">
-                    <li><a href="#.php">menu</a></li>
-                </div>
-                <div class="navBoxes">
-                    <li><a href="#.php">contact</a></li>
-                </div>
-                <div class="navBoxes">
-                    <li><a href="#.php">login</a></li>
-                </div>
-            </div>
-        </nav>
+
+        <?php 
+            include "nav.php"
+        ?>
+
         <div class="backgroundContainer">
         </div>
     </main>
@@ -49,5 +32,4 @@
         </div>
     </div>
 </body>
-
 </html>
