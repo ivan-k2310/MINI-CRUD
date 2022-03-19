@@ -1,308 +1,433 @@
-
 :root {
-        --main: #e94e77;
-        --primairy: #d68189;
-        --secondary: #c6a49a;
-        --tertairy: #c6e5d9;
-        --quaternary: #f4ead5;
+  --main: #e94e77;
+  --primairy: #d68189;
+  --secondary: #c6a49a;
+  --tertairy: #c6e5d9;
+  --quaternary: #f4ead5;
 }
 
 * {
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-    width: 100%;
-    height: 400px;
-    background-color: #070707;
+  width: 100%;
+
+  background-color: #070707;
 }
 main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    background-image: url(https://images.pexels.com/photos/670705/pexels-photo-670705.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=`);
-    /* image background moet overheen komen met text zwart en wit bijvoorbeeld */
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images.pexels.com/photos/670705/pexels-photo-670705.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=`);
+  /* image background moet overheen komen met text zwart en wit bijvoorbeeld */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* navbar */
 nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .navbar {
-    padding-top: 25px;
-    width: 100%;
-    height: 5vh;
+  margin-top: 50px;
+  width: 100%;
+  height: 5vh;
 }
 .logoOrName {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100%;
 }
 
 .navSpaceBetween {
-    width: 45%;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  height: 100%;
 }
 
 .navLinkBox {
-    display: flex;
-    align-items: center;
-    width: 30%;
-    height: 100%;
-
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 100%;
 }
 
 .navBoxes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 33%;
 }
 
-li, a {
-    text-decoration: none;
-    list-style: none;
-    font-size: 20px;
-    color: ivory;
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  color: ivory;
 }
 
 /* navbarHover */
 .navbar li a {
-    transition: 0.5s;
-    color: var(--ivory);
-    text-decoration: none;
+  transition: 0.5s;
+  color: var(--ivory);
+  text-decoration: none;
 }
 
 .navbar li a:hover {
-    transition: 0.5s;
-    transform: scale();
-    color: var(--primairy);
+  transition: 0.5s;
+  transform: scale();
+  color: var(--primairy);
 }
 
 .backgroundContainer {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 95vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 95vh;
 }
 
 .contentBox {
-    margin-left: 100px;
-    margin-top: 50px;
-    height: 90vh;
-    width: 40%;
+  margin-left: 100px;
+  margin-top: 50px;
+  height: 90vh;
+  width: 40%;
 }
 
-.contenBoxTitle{
-    display: flex;
-    width: 100%;
-    height: 10%;
-    margin: 15px;
-    margin-left: 230px;
+.contenBoxTitle {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  margin: 15px;
+  margin-left: 230px;
 }
 
-.title{
-    font-size: 60px;
-    color: var(--main);
+.title {
+  transition: 0.5s;
+  font-size: 50px;
+  color: var(--main);
 }
 
-.contentBoxTextBox{
-    width: 100%;
-    height: 90%;
-    margin: 15px;
-    font-size: 35px;
+.title:hover {
+  transition: 0.5s;
+  transform: scale();
+  color: var(--primairy);
 }
 
+.contentBoxTextBox {
+  width: 100%;
+  height: 90%;
+  margin: 15px;
+  font-size: 35px;
+}
 
 /* navbarHover */
 /* navbar */
 
 /* container */
 .container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.imageWelcome{
-    width: 45%;
-    height: 90%;
-    background-color: #e94e77;
+.imageWelcome {
+  width: 45%;
+  height: 90%;
+  background-color: #e94e77;
 }
 
 .textWelcome {
-    width: 45%;
-    height: 90%;
-    background-color: #d68189;
+  width: 45%;
+  height: 90%;
+  background-color: #d68189;
 }
 
 /* login page css */
 #mainLogin {
-    display: flex;
-    background-image: url(https://images.pexels.com/photos/10692499/pexels-photo-10692499.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-    align-items: center;
+  display: flex;
+  background-image: url(https://images.pexels.com/photos/10692499/pexels-photo-10692499.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  align-items: center;
 }
 
 form {
-    align-items: center;
+  align-items: center;
 }
 
 input {
-    text-align: center;
+  text-align: center;
 }
 
 #title-forms-register {
-    text-align: center;
-    margin-bottom: 35px;
-    font-weight: 900;
-    font-size: 50px;
-    color: ivory;
+  text-align: center;
+  margin-bottom: 35px;
+  font-weight: 900;
+  font-size: 50px;
+  color: var(--main);
 }
 
 .radio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .radio-names {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .radio-buttons {
-    width: 30px;
-    height: 30px;
-
+  width: 30px;
+  height: 30px;
 }
 
 .login-text-box {
-    border: 2px solid black;
-    border-radius: 10px;
-    margin: 5px;
-    width: 300px;
-    height: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  width: 300px;
+  height: 40px;
 }
 
 .submit-login {
-    border: 2px solid black;
-    color: ivory;
-    border-radius: 10px;
-    background-color: var(--main);
-    margin-left: 5px;
-    width: 300px;
-    height: 40px;
-    cursor: pointer;
+  border: 2px solid black;
+  color: ivory;
+  border-radius: 10px;
+  background-color: var(--main);
+  margin-left: 5px;
+  width: 300px;
+  height: 40px;
+  cursor: pointer;
 }
 
 .submit-login {
-    transition: 0.5s;
-    background-color: var(--main);
-    text-decoration: none;
+  transition: 0.5s;
+  background-color: var(--main);
+  text-decoration: none;
 }
 
 .submit-login:hover {
-    transition: 0.5s;
-    transform: scale();
-    background-color: var(--primairy);
+  transition: 0.5s;
+  transform: scale();
+  background-color: var(--primairy);
 }
 
 form {
-    margin-top: 175px;
+  margin-top: 175px;
 }
 /* login page css */
 
 /* contact page css */
- .contactContainer {
-     width: 100%;
-     height: 91vh;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-    }
+.contactContainer {
+  width: 100%;
+  height: 91vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #mainContact {
-    display: flex;
-    background-image: url(https://images.pexels.com/photos/10692504/pexels-photo-10692504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    align-items: center;
+  display: flex;
+  background-image: url(https://images.pexels.com/photos/10692504/pexels-photo-10692504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  align-items: center;
 }
 
 .emptySpace {
-    width: 60%;
-    height: 100%;
+  width: 60%;
+  height: 100%;
 }
 
 .ContactTextBox {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .emptyTextBoxSpace {
-    width: 100%;
-    height: 5%;
+  width: 100%;
+  height: 5%;
 }
 
 .cityTitle {
-    color: ivory;
-    display: flex;
-    align-items: flex-start;
+  color: ivory;
+  display: flex;
+  align-items: flex-start;
 }
 
 .city {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 .generalInfo {
-    color: ivory;
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    height: 5%;
+  color: ivory;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 5%;
 }
 
 .splitGeneralInfo {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
 }
 
-.city, .cityTitle, .generalInfo {
-    margin-left: 15px;
+.city,
+.cityTitle,
+.generalInfo {
+  margin-left: 15px;
 }
 
 #borderContact {
-    border-bottom: 1px solid ivory;
+  border-bottom: 1px solid ivory;
 }
 
 #borderContactDelivery {
-    border-bottom: 1px solid ivory;
-    margin-top: 10px;
+  border-bottom: 1px solid ivory;
+  margin-top: 10px;
 }
 /* contact page css */
 /* menu page css */
 .menuContainer {
-    height: 2000px;
-    width: 100%;
-    background-color: #070707;
-    display: flex;
-    flex-direction: row;
+  height: auto;
+  width: 100%;
+  background-color: #070707;
+  display: flex;
+  flex-direction: row;
 }
 
+.productNavbar {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  width: 15%;
+  height: 65%;
+  position: fixed;
+  left: 0;
+  display: flex;
+  margin-left: 75px;
+  margin-top: 125px;
+  background-color: var(--main);
+  border-radius: 12.5px;
+  transition: 0.5s;
+  color: ivory;
+  text-decoration: none;
+  border: 2px solid black;
+}
 
+.productNavbarLinks {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  padding: 35px;
+}
+
+.productNavbar li a:hover {
+  transition: 0.5s;
+  color: var(--primairy);
+  text-decoration: none;
+}
+
+.menuEmptyspace {
+  width: 20%;
+  height: auto;
+  background-color: salmon;
+}
+
+.itemsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  row-gap: 30px;
+  flex-wrap: wrap;
+  width: 55%;
+  margin-top: 30px;
+  background-color: #f4ead5;
+}
+
+.productContainer {
+  display: flex;
+  flex-direction: column;
+
+  width: 30%;
+  height: 450px;
+  background-color: #e94e77;
+}
+
+.productImage {
+  height: 45%;
+  width: auto;
+  background-color: #c6e5d9;
+}
+
+.productInfo {
+  height: 35%;
+  width: auto;
+  margin: 10px;
+  background-color: yellowgreen;
+}
+
+.productPrice-Add {
+  display: flex;
+  flex-direction: row;
+  height: 20%;
+  width: auto;
+  background-color: aquamarine;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  background-color: yellow;
+}
+
+.addButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  background-color: darkgoldenrod;
+}
+
+.shoppingCartContainer {
+  width: 25%;
+  height: auto;
+  background-color: azure;
+  margin-top: 30px;
+}
+
+.priceButton {
+  width: 75px;
+  height: 35px;
+  background-color: var(--main);
+  border: 2px solid black;
+  border-radius: 12.5px;
+}
+
+.buttonString {
+  font-size: 15px;
+}
 /* menu page css */

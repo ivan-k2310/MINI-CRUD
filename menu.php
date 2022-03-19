@@ -1,23 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Document</title>
-</head>
+        <?php 
+        include "header.php"
+        ?>
 <body>
         <?php 
             include "nav.php"
         ?>
         <div class="menuContainer">
             <div class="menuNavContainer">
+                <div class="productNavbar">
+                    <li class="ProductNavbarLinks"><a href="#">example</a></li>
+                    <li class="ProductNavbarLinks"><a href="#">example</a></li>
+                    <li class="ProductNavbarLinks"><a href="#">example</a></li>
+                    <li class="ProductNavbarLinks"><a href="#">example</a></li>
+                    <li id="ProductNavbarLinks"><a href="#">example</a></li>
+                </div>
+            </div>
+            <div class="menuEmptyspace">
 
             </div>
-            <div class="productContainer">
+            <div class="itemsContainer">
+                <div class="productContainer">
+                    <div class="productImage">
+
+                    </div>
+                    <div class="productInfo">
+                        <p> 
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Donec leo ex, tempor non eros vitae, vestibulum accumsan tellus.
+                            Vivamus volutpat purus at tincidunt rutrum. 
+                        </p>
+                    </div>
+                    <div class="productPrice-Add">
+                        <div class="price">
+                            <a class="#">0,00</a>
+                        </div>
+                        <div class="addButton">
+                            <button class="priceButton">
+                                <a class="buttonString">add</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 <div class="productContainer">
                     <div class="productImage">
 
@@ -30,13 +53,125 @@
 
                         </div>
                         <div class="addButton">
+                            <button class="priceButton">
+                                <a>add</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productContainer">
+                    <div class="productImage">
 
+                    </div>
+                    <div class="productInfo">
+
+                    </div>
+                    <div class="productPrice-Add">
+                        <div class="price">
+
+                        </div>
+                        <div class="addButton">
+                            <button class="priceButton">
+                                <a>add</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productContainer">
+                    <div class="productImage">
+
+                    </div>
+                    <div class="productInfo">
+
+                    </div>
+                    <div class="productPrice-Add">
+                        <div class="price">
+
+                        </div>
+                        <div class="addButton">
+                            <button class="priceButton">
+                                <a>add</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productContainer">
+                    <div class="productImage">
+
+                    </div>
+                    <div class="productInfo">
+
+                    </div>
+                    <div class="productPrice-Add">
+                        <div class="price">
+
+                        </div>
+                        <div class="addButton">
+                            <button class="priceButton">
+                                <a>add</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productContainer">
+                    <div class="productImage">
+
+                    </div>
+                    <div class="productInfo">
+
+                    </div>
+                    <div class="productPrice-Add">
+                        <div class="price">
+
+                        </div>
+                        <div class="addButton">
+                            <button class="priceButton">
+                                <a>add</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productContainer">
+                    <div class="productImage">
+
+                    </div>
+                    <div class="productInfo">
+
+                    </div>
+                    <div class="productPrice-Add">
+                        <div class="price">
+
+                        </div>
+                        <div class="addButton">
+                            <button class="priceButton">
+                                <a>add</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productContainer">
+                    <div class="productImage">
+
+                    </div>
+                    <div class="productInfo">
+
+                    </div>
+                    <div class="productPrice-Add">
+                        <div class="price">
+
+                        </div>
+                        <div class="addButton">
+                            <button class="priceButton">
+                                <a>add</a>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="cart">
-
+            <div class="shoppingCartContainer">
+                <div class="shoppingCart">
+                    
+                </div>
             </div>
             
 

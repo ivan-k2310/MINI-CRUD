@@ -1,7 +1,7 @@
     <?php 
        include "header.php"
     ?>
-
+ 
 <body>
     <main id="mainContact">
         <?php 

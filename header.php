@@ -18,7 +18,6 @@ try
 }
 
 catch (PDOException $e)
-
 {
     echo $e->getMessage();
     die("Sorry, Database probleem");
