@@ -170,7 +170,24 @@
             </div>
             <div class="shoppingCartContainer">
                 <div class="shoppingCart">
-                    
+                    <div class="shoppingCartTitle">
+
+                    </div>
+                    <div class="shoppingCartItems">
+
+                    </div>
+                    <div class="shoppingCartItems">
+                        
+                    </div>
+                    <div class="shoppingInfo">
+                        <div class="totPrice">
+
+                        </div>
+                        <div class="checkoutContainer">
+                             <button>checkout</button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             

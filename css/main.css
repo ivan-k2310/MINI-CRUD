@@ -412,13 +412,6 @@ form {
   background-color: darkgoldenrod;
 }
 
-.shoppingCartContainer {
-  width: 25%;
-  height: auto;
-  background-color: azure;
-  margin-top: 30px;
-}
-
 .priceButton {
   width: 75px;
   height: 35px;
@@ -429,5 +422,37 @@ form {
 
 .buttonString {
   font-size: 15px;
+}
+
+.shoppingCartContainer {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  height: auto;
+  background-color: azure;
+  margin-top: 30px;
+}
+
+.shoppingCart {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 350px;
+  background-color: #c6e5d9;
+}
+.shoppingCartTitle {
+  height: 50px;
+  width: auto;
+  background-color: yellow;
+}
+
+.shoppingCartItems {
+  height: 75px;
+  width: auto;
+  background-color: chocolate;
+}
+
+.shoppingInfo {
+  height: 50px;
 }
 /* menu page css */
