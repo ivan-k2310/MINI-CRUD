@@ -6,31 +6,17 @@
             $stmt->bindParam(":ID", $_POST['getal']);
             $stmt->execute();
             $result =$stmt->fetchAll();
-       }
-       
-        
+       }  
     ?>
-    
+
 <body>
     <main id="mainLogin">
         <?php 
             include "nav.php"
         ?>
-            <form action="editMenu.php" method="post">
-                <p id="title-forms-register">login</p>
-                <div>
-                    <input class="login-text-box" name="username" type="text" placeholder="username">
-                </div>
-                <div>
-                    <input class="login-text-box" name="password" type="password" placeholder="enter password">
-                    <input class="number" name="getal" type="number" placeholder="yeet">
-                </div>
-                <div>
-                    <input class="submit-login" name="submit" type="submit" value="pik">
-                </div>
-            </form>
             <?php 
                 if(isset($_POST['submit'])){
+                    
                     echo $_POST['username'] ."<br>";
                   
                     echo $_POST['password'];
