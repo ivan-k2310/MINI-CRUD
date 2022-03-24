@@ -1,12 +1,11 @@
     <?php
-       include "header.php";
+       include_once "header.php";
        if(isset($_POST['getal'])){
-        $sql = "SELECT title, artiest, gerne FROM album WHERE ID = :ID";
-       $stmt ->bindparam(":ID", $_POST['getal']);
-
-        $stmt = $connect ->prepare($sql);
-        $stmt ->execute();
-        $result =$stmt->fetchAll();
+            $sql = "SELECT title, artiest, gerne FROM album WHERE ID = :ID";
+            $stmt = $connect->prepare($sql);
+            $stmt->bindParam(":ID", $_POST['getal']);
+            $stmt->execute();
+            $result =$stmt->fetchAll();
        }
        
         

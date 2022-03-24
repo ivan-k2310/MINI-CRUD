@@ -193,5 +193,24 @@
             
 
         </div>
+        <?php 
+            if(isset($_POST['getal'])){
+                $sql = "SELECT title, artiest, gerne FROM album WHERE ID = :ID";
+                $stmt ->bindparam(":ID", $_POST['getal']);
+
+                $stmt = $connect ->prepare($sql);
+                $stmt ->execute();
+                $result =$stmt->fetchAll();
+            }
+
+            if(isset($_POST['submit'])){
+                echo $_POST['username'] ."<br>";
+                
+                echo $_POST['password'];
+                echo $result[0]['title'];
+                echo $result[0]['artiest'];
+                echo $result[0]['gerne'];
+            }   
+        ?>
 </body>
 </html>
