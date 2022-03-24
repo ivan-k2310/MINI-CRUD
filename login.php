@@ -1,5 +1,15 @@
-    <?php 
-       include "header.php"
+    <?php
+       include "header.php";
+       if(isset($_POST['getal'])){
+        $sql = "SELECT title, artiest, gerne FROM album WHERE ID = :ID";
+       $stmt ->bindparam(":ID", $_POST['getal']);
+
+        $stmt = $connect ->prepare($sql);
+        $stmt ->execute();
+        $result =$stmt->fetchAll();
+       }
+       
+        
     ?>
     
 <body>
@@ -7,18 +17,29 @@
         <?php 
             include "nav.php"
         ?>
-            <form>
+            <form action="login.php" method="post">
                 <p id="title-forms-register">login</p>
                 <div>
-                    <input class="login-text-box" type="text" placeholder="username">
+                    <input class="login-text-box" name="username" type="text" placeholder="username">
                 </div>
                 <div>
-                    <input class="login-text-box" type="password" placeholder="enter password">
+                    <input class="login-text-box" name="password" type="password" placeholder="enter password">
+                    <input class="number" name="getal" type="number" placeholder="yeet">
                 </div>
                 <div>
-                    <input class="submit-login" type="submit">
+                    <input class="submit-login" name="submit" type="submit" value="pik">
                 </div>
             </form>
+            <?php 
+                if(isset($_POST['submit'])){
+                    echo $_POST['username'] ."<br>";
+                  
+                    echo $_POST['password'];
+                    echo $result[0]['title'];
+                    echo $result[0]['artiest'];
+                    echo $result[0]['gerne'];
+                }   
+            ?>
     </main>
 </body>
 </html>

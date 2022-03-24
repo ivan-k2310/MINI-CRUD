@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$db = 'sushi place';
+$db = 'webshop';
 $user = 'root';
 $pass = "";
 $charset = 'utf8mb4';
