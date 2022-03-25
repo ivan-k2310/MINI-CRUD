@@ -456,3 +456,58 @@ form {
   height: 50px;
 }
 /* menu page css */
+/* dashboard css */
+
+.dashboardContainer {
+  background-color: #070707;
+  height: 100vh;
+  width: auto;
+}
+
+.titleDashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+}
+.dashboardTitle {
+  font-size: 60px;
+  color: #e94e77;
+}
+.CRUDNavContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: 90%;
+  width: 100%;
+}
+
+.navItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 22.5%;
+  background-color: ivory;
+  box-shadow: rgba(255, 255, 255, 0.9) 0px 2px 8px 0px;
+}
+
+.navTitle {
+  font-size: 45px;
+  color: #e94e77;
+}
+
+.navItems {
+  transition: 0.5s;
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.navItems:hover {
+  transition: 0.5s;
+  height: 65%;
+  width: 30%;
+}
+/* dashboard css */
