@@ -1,14 +1,24 @@
     <?php
        include_once "header.php";
-       if(isset($_POST['getal'])){
-            $sql = "SELECT title, artiest, gerne FROM album WHERE ID = :ID";
-            $stmt = $connect->prepare($sql);
-            $stmt->bindParam(":ID", $_POST['getal']);
-            $stmt->execute();
-            $result =$stmt->fetchAll();
-       }
-       
+        $sql = "SELECT * FROM admin WHERE username = :username AND password = :password";
+        $stmt = $connect->prepare($sql);
+        $stmt->bindParam(":username", $_POST['username']);
+        $stmt->bindParam(":password", $_POST['password']);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+        var_dump($result);
+        if (isset($_POST['submit'])){
+            if(count($result) > 0){
+                // setcookie("username", $_POST['username'],
+                header("Location: dashboard.php");
+            } else {
+                echo "username niet gevonden";
+            }
+            var_dump($_POST);
         
+        ;
+        }
+            
     ?>
     
 <body>
@@ -16,40 +26,18 @@
         <?php 
             include "nav.php"
         ?>
-            <form action="dashboard.php" method="post">
+            <form action="loginpage.php" method="post">
                 <p id="title-forms-register">login</p>
                 <div>
-                    <input class="login-text-box" name="username" type="text" placeholder="username">
+                    <input class="login-text-box" name="username" type="text" placeholder="username" value="">
                 </div>
                 <div>
-                    <input class="login-text-box" name="password" type="password" placeholder="enter password">
+                    <input class="login-text-box" name="password" type="password" placeholder="enter password" value="">
                 </div>
                 <div>
-                    <input class="submit-login" name="submit" type="submit" value="pik">
+                    <input class="submit-login" name="submit" type="submit" value="submit">
                 </div>
             </form>
-            <?php 
-                if(isset($_POST['submit'])){
-                    echo $_POST['username'] ."<br>";
-                  
-                    echo $_POST['password'];
-                    echo $result[0]['title'];
-                    echo $result[0]['artiest'];
-                    echo $result[0]['gerne'];
-                }   
-                
-            ?>
-            <?php 
-                    if(isset($_POST['submit'])){
-                        
-                        echo "<h1 class='title'> welcome ". $_POST['username'] ." </h1>";
-                    
-                        // echo $_POST['password'];
-                        // echo $result[0]['title'];
-                        // echo $result[0]['artiest'];
-                        // echo $result[0]['gerne'];
-                    }   
-                ?>
     </main>
 </body>
 </html>
