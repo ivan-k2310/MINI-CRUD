@@ -47,18 +47,21 @@
         </tbody>
         </tr>
         </table>
+        <div class="titleDashboard">
+            <a class="dashboardTitle">toevoegen</a>
+        </div>
         <form action="menubeheer.php" method="POST">
             <div>
-                <input type="text" name="nameDish" placeholder="title"></input>
+                <input class="login-text-box" type="text" name="nameDish" placeholder="title"></input>
             </div>
             <div>
-                <input type="text" name="priceDish" placeholder="price"></input>
+                <input class="login-text-box" type="text" name="priceDish" placeholder="price"></input>
             </div>
             <div>
                 <input type="file" name="imageDish" ></input>
             </div>
             <div>
-                <input type="text" name="beschrijving" placeholder="description"></input>
+                <input class="login-text-box" type="text" name="beschrijving" placeholder="description"></input>
             </div>
         </form>
 

@@ -519,7 +519,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   background-color: wheat;
   height: 100vh;
   width: auto;
