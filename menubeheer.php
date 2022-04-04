@@ -1,10 +1,23 @@
 <?php
     include_once "header.php";
-        $sql = "SELECT * FROM album";
-        $stmt = $connect->prepare($sql);
+    $sql = "SELECT * FROM products";
+    $stmt = $connect->prepare($sql);
         // $stmt->bindParam(":ID", $_POST['']);
+    $stmt->execute();
+    $result =$stmt->fetchAll();
+    if (isset($_POST['submit'])){
+
+        $sql ="INSERT INTO `products` (`name`, `price`, `image`, `about`)
+               VALUES (:name, :price, :image, :about)";
+        $stmt = $connect->prepare($sql);
+        $stmt->bindParam(":name", $_POST['name']);
+        $stmt->bindParam(":price", $_POST['price']);
+        $stmt->bindParam(":image", $_POST['image']);
+        $stmt->bindParam(":about", $_POST['about']);
         $stmt->execute();
-        $result =$stmt->fetchAll();
+
+
+    }
 ?>
 
 <body>
@@ -15,7 +28,7 @@
 
     <div class="menuBeheerContainer">
         <div class="titleDashboard">
-            <a class="dashboardTitle">dashboard</a>
+            <a class="dashboardTitle">menubeheer</a>
         </div>
         <table class="blueTable">
             <thead>
@@ -24,8 +37,7 @@
                     <th>NAME</th>
                     <th>PRICE</th>
                     <th>IMAGE</th>
-                    <th>ABOUT</th>
-                    <th>ABOUT</th>
+                    <th>UPDATE</th>
                 </tr>
             </thead>
             <tfoot>
@@ -38,31 +50,12 @@
                 <?php
                     foreach ($result as $res) {
                         echo  "<tr>";
-                            echo "<td>". $res['ID'] . "</td> <td>" . $res['title'] . "</td><td>" . $res['artiest'] . "</td> <td>". $res['gerne'] . "</td> <td>". $res['prijs'] . "</td> <td>". $res['voorraad'] . "</td>";
+                            echo "<td>". $res['ID'] . "</td> <td>" . $res['name'] . "</td><td>" . $res['price'] . "</td> <td>". $res['image'] . "</td> <td>". $res['about'] . "</td> <td> <input class='submit-login' name='submit' type='submit' value='submit'>  </td>";
                         echo "<tr>";    
                     }
                 ?>
             </tbody>
         </table>
-
-        <div class="titleDashboard">
-            <a class="dashboardTitle">toevoegen</a>
-        </div>
-
-        <form action="menubeheer.php" method="POST">
-            <div>
-                <input class="login-text-box" type="text" name="nameDish" placeholder="title"></input>
-            </div>
-            <div>
-                <input class="login-text-box" type="text" name="priceDish" placeholder="price"></input>
-            </div>
-            <div>
-                <input type="file" name="imageDish"></input>
-            </div>
-            <div>
-                <input class="login-text-box" type="text" name="beschrijving" placeholder="description"></input>
-            </div>
-        </form>
     </div>
 </body>
 

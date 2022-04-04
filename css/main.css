@@ -517,11 +517,11 @@ form {
 /* menubeheer */
 .menuBeheerContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   background-color: wheat;
-  height: 100vh;
+  height: 150vh;
   width: auto;
 }
 
@@ -592,5 +592,17 @@ table.blueTable tfoot .links a {
   color: #ffffff;
   padding: 2px 8px;
   border-radius: 5px;
+}
+
+.createContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50%;
+  width: auto;
+}
+
+.update {
 }
 /* menubeheer */

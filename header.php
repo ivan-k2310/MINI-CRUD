@@ -2,7 +2,7 @@
 session_start();
 
 $host = 'localhost';
-$db = 'webshop';
+$db = 'sushi place';
 $user = 'root';
 $pass = "";
 $charset = 'utf8mb4';
