@@ -1,23 +1,10 @@
 <?php
-    include_once "header.php";
+    include "header.php";
     $sql = "SELECT * FROM products";
     $stmt = $connect->prepare($sql);
-        // $stmt->bindParam(":ID", $_POST['']);
+    // $stmt->bindParam(":ID", $_GET['ID']);
     $stmt->execute();
     $result =$stmt->fetchAll();
-    if (isset($_POST['submit'])){
-
-        $sql ="INSERT INTO `products` (`name`, `price`, `image`, `about`)
-               VALUES (:name, :price, :image, :about)";
-        $stmt = $connect->prepare($sql);
-        $stmt->bindParam(":name", $_POST['name']);
-        $stmt->bindParam(":price", $_POST['price']);
-        $stmt->bindParam(":image", $_POST['image']);
-        $stmt->bindParam(":about", $_POST['about']);
-        $stmt->execute();
-
-
-    }
 ?>
 
 <body>
@@ -28,7 +15,7 @@
 
     <div class="menuBeheerContainer">
         <div class="titleDashboard">
-            <a class="dashboardTitle">menubeheer</a>
+            <a class="dashboardTitle">menu management</a>
         </div>
         <table class="blueTable">
             <thead>
@@ -37,7 +24,8 @@
                     <th>NAME</th>
                     <th>PRICE</th>
                     <th>IMAGE</th>
-                    <th>UPDATE</th>
+                    <th>ABOUT</th>
+                    <th>UPDATE/DELETE</th>
                 </tr>
             </thead>
             <tfoot>
@@ -50,12 +38,24 @@
                 <?php
                     foreach ($result as $res) {
                         echo  "<tr>";
-                            echo "<td>". $res['ID'] . "</td> <td>" . $res['name'] . "</td><td>" . $res['price'] . "</td> <td>". $res['image'] . "</td> <td>". $res['about'] . "</td> <td> <input class='submit-login' name='submit' type='submit' value='submit'>  </td>";
+                            echo "<td>". $res['ID'] . "</td>
+                            <td>" . $res['Name'] . "</td>
+                            <td>" . $res['Price'] . "</td>
+                            <td>". $res['Image'] . "</td>
+                            <td>". $res['About'] . "</td>
+                            <td> <input class='update-login' name='update' type='submit' value='update' onclick='update.php'>
+                             <input class='delete-login' name='delete' type='submit' value='delete' onclick='#'>  </td>";
                         echo "<tr>";    
                     }
                 ?>
             </tbody>
         </table>
+        <div class="createLink">
+            <a class="createLink" href="create.php">create</a>
+        </div>
+        <div class="backLink">
+            <a class="smallLink" href="dashboard.php">back</a>
+        </div>
     </div>
 </body>
 

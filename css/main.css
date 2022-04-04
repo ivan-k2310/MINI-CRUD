@@ -520,14 +520,14 @@ form {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  background-color: wheat;
-  height: 150vh;
+  height: 85vh;
   width: auto;
+  padding: 20px;
 }
 
 table.blueTable {
   border: 1px solid #1c6ea4;
-  background-color: #9aeeae;
+  background-color: #eeeeee;
   width: 100%;
   text-align: left;
   border-collapse: collapse;
@@ -539,20 +539,21 @@ table.blueTable th {
 }
 table.blueTable tbody td {
   font-size: 13px;
+  color: #333333;
 }
 table.blueTable tr:nth-child(even) {
-  background: #d0e4f5;
+  background: #f5dce6;
 }
 table.blueTable thead {
-  background: #1c6ea4;
-  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1c6ea4 100%);
+  background: #a40000;
+  background: -moz-linear-gradient(top, #bb4040 0%, #ad1919 66%, #a40000 100%);
   background: -webkit-linear-gradient(
     top,
-    #5592bb 0%,
-    #327cad 66%,
-    #1c6ea4 100%
+    #bb4040 0%,
+    #ad1919 66%,
+    #a40000 100%
   );
-  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1c6ea4 100%);
+  background: linear-gradient(to bottom, #bb4040 0%, #ad1919 66%, #a40000 100%);
   border-bottom: 2px solid #444444;
 }
 table.blueTable thead th {
@@ -603,6 +604,67 @@ table.blueTable tfoot .links a {
   width: auto;
 }
 
-.update {
+.update-login {
+  border: 2px solid black;
+  color: black;
+  border-radius: 10px;
+  background-color: var(--quaternary);
+  margin-left: 5px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.update-login {
+  transition: 0.5s;
+  background-color: var(--quaternary);
+  text-decoration: none;
+}
+
+.update-login:hover {
+  transition: 0.5s;
+  transform: scale();
+  background-color: var(--quaternary);
+}
+.delete-login {
+  border: 2px solid black;
+  color: ivory;
+  border-radius: 10px;
+  background-color: var(--main);
+  margin-left: 5px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.delete-login {
+  transition: 0.5s;
+  background-color: var(--main);
+  text-decoration: none;
+}
+
+.delete-login:hover {
+  transition: 0.5s;
+  transform: scale();
+  background-color: var(--primairy);
+}
+
+.smallLink {
+  font-size: 30px;
+  color: #e94e77;
+}
+.smallLink:hover {
+  transition: 00.5s;
+  color: #e63766;
+}
+
+.createLink {
+  font-size: 45px;
+  color: #e94e77;
+}
+
+.createLink:hover {
+  transition: 00.5s;
+  color: #e63766;
 }
 /* menubeheer */

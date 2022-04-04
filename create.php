@@ -18,12 +18,9 @@
 ?>
 
     <div class="menuBeheerContainer">
-        <div class="titleDashboard">
-            <a class="dashboardTitle">menubeheer</a>
-        </div>
         <div class="createContainer">
             <div class="titleDashboard">
-                <a class="dashboardTitle">toevoegen</a>
+                <a class="dashboardTitle">create</a>
             </div>
 
             <form action="test.php" method="POST">
@@ -43,6 +40,9 @@
                     <input class="submit-login" name="submit" type="submit" value="submit">
                 </div>
             </form>
+        </div>
+        <div class="backLink">
+            <a class="smallLink" href="menubeheer.php">back</a>
         </div>
     </div>
 </body>
