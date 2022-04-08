@@ -1,14 +1,5 @@
 <?php
     include_once('header.php');
-    if (isset($_POST['submit'])){
-        $sql ="INSERT INTO `products` (`name`, `price`, `image`, `about`)VALUES (:name, :price, :image, :about)";
-        $stmt = $connect->prepare($sql);
-        $stmt->bindParam(":name", $_POST['name']);
-        $stmt->bindParam(":price", $_POST['price']);
-        $stmt->bindParam(":image", $_POST['image']);
-        $stmt->bindParam(":about", $_POST['about']);
-        $stmt->execute();
-    }
 ?>
 
 <body>
@@ -23,7 +14,7 @@
                 <a class="dashboardTitle">create</a>
             </div>
 
-            <form action="test.php" method="POST">
+            <form action="menuAction.php" method="POST">
                 <div>
                     <input class="login-text-box" type="text" name="name" placeholder="title"></input>
                 </div>
@@ -37,7 +28,7 @@
                     <input class="login-text-box" type="text" name="about" placeholder="description"></input>
                 </div>
                 <div>
-                    <input class="submit-login" name="submit" type="submit" value="submit">
+                    <input class="submit-login" name="create" type="submit" value="submit">
                 </div>
             </form>
         </div>

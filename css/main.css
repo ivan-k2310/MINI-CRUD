@@ -667,4 +667,9 @@ table.blueTable tfoot .links a {
   transition: 00.5s;
   color: #e63766;
 }
+
+.linkUpdate {
+  font-size: 13px;
+  color: #e94e77;
+}
 /* menubeheer */

@@ -25,7 +25,8 @@
                     <th>PRICE</th>
                     <th>IMAGE</th>
                     <th>ABOUT</th>
-                    <th>UPDATE/DELETE</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
                 </tr>
             </thead>
             <tfoot>
@@ -37,15 +38,28 @@
             <tbody>
                 <?php
                     foreach ($result as $res) {
-                        echo  "<tr>";
-                            echo "<td>". $res['ID'] . "</td>
-                            <td>" . $res['Name'] . "</td>
-                            <td>" . $res['Price'] . "</td>
-                            <td>". $res['Image'] . "</td>
-                            <td>". $res['About'] . "</td>
-                            <td> <input class='update-login' name='update' type='submit' value='update' onclick='update.php'>
-                             <input class='delete-login' name='delete' type='submit' value='delete' onclick='#'>  </td>";
-                        echo "<tr>";    
+                ?>
+                        <tr>
+                            <td><?php echo $res['ID']; ?></td>
+                            <td><?php echo $res['Name']; ?></td>
+                            <td><?php echo $res['Price']; ?></td>
+                            <td><?php echo $res['Image']; ?></td>
+                            <td><?php echo $res['About']; ?></td>
+                            <td>    
+                                <form action='update.php' method='POST'>
+                                    <input name='menuID' type='hidden' value='<?php echo $res['ID']; ?>'>
+                                    <input class='update-login' name='updateLink' type='submit' value='update'>
+                                </form> 
+                            </td>
+                            <td> 
+                                <form action='menuAction.php' method='POST'>
+                                        <input name='menuID' type='hidden' value='<?php echo $res['ID']; ?>' />
+                                        <input class='delete-login' name='delete' type='submit' value='delete' />
+                                </form>
+                            </td>
+                        </tr>
+
+                <?php
                     }
                 ?>
             </tbody>
