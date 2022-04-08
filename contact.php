@@ -1,11 +1,11 @@
     <?php 
-       include "header.php"
+       include "include/header.php"
     ?>
  
 <body>
     <main id="mainContact">
         <?php 
-            include "nav.php"
+            include "include/nav.php"
         ?>
         <div class="contactContainer">
             <div class="emptySpace">

@@ -1,5 +1,5 @@
 <?php
-    include_once('header.php');
+    include_once 'header.php';
 
     $sql="SELECT * FROM products WHERE ID = :ID";
     $stmt = $connect->prepare($sql);

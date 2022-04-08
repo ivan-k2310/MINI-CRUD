@@ -1,9 +1,9 @@
         <?php 
-        include "header.php"
+        include "include/header.php"
         ?>
 <body>
         <?php 
-            include "nav.php"
+            include "include/nav.php"
         ?>
         <div class="menuContainer">
             <div class="menuNavContainer">
