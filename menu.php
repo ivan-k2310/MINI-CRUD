@@ -1,5 +1,9 @@
         <?php 
-        include "include/header.php"
+        include "include/header.php";
+            $sql = "SELECT * FROM products";
+            $stmt = $connect->prepare($sql);
+            $stmt->execute();
+            $result =$stmt->fetchAll();
         ?>
 <body>
         <?php 
@@ -19,155 +23,35 @@
 
             </div>
             <div class="itemsContainer">
-                <div class="productContainer">
-                    <div class="productImage">
-
-                    </div>
-                    <div class="productInfo">
-                        <p> 
-                            Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. Donec leo ex, tempor non eros vitae, vestibulum accumsan tellus.
-                            Vivamus volutpat purus at tincidunt rutrum. 
-                        </p>
-                    </div>
-                    <div class="productPrice-Add">
-                        <div class="price">
-                            <a class="#">0,00</a>
+                <?php
+                    foreach ($result as $res) {
+                ?>
+                    <div class="productContainer">
+                        <div class="productImage">
+                            <img src="img/N<?php echo $res['Image']; ?>" alt="">
                         </div>
-                        <div class="addButton">
-                            <button class="priceButton">
-                                <a class="buttonString">add</a>
-                            </button>
+                        <div class="productInfo">
+                            <p class="about"> 
+                                <?php echo $res['Name']; ?> <br>
+                                <?php echo $res['About']; ?>
+                            </p>
+                        </div>
+                        <div class="productPrice-Add">
+                            <div class="priceItem">
+                                <a class="price"> <?php echo $res['Price']; ?></a>
+                            </div>
+                            <div class="addButton">
+                                <button class="priceButton">
+                                    <a class="buttonString">add</a>
+                                </button>
+                            </div>
                         </div>
                     </div>
+                <?php
+                    }
+                    ?>
                 </div>
-                <div class="productContainer">
-                    <div class="productImage">
 
-                    </div>
-                    <div class="productInfo">
-
-                    </div>
-                    <div class="productPrice-Add">
-                        <div class="price">
-
-                        </div>
-                        <div class="addButton">
-                            <button class="priceButton">
-                                <a>add</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="productContainer">
-                    <div class="productImage">
-
-                    </div>
-                    <div class="productInfo">
-
-                    </div>
-                    <div class="productPrice-Add">
-                        <div class="price">
-
-                        </div>
-                        <div class="addButton">
-                            <button class="priceButton">
-                                <a>add</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="productContainer">
-                    <div class="productImage">
-
-                    </div>
-                    <div class="productInfo">
-
-                    </div>
-                    <div class="productPrice-Add">
-                        <div class="price">
-
-                        </div>
-                        <div class="addButton">
-                            <button class="priceButton">
-                                <a>add</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="productContainer">
-                    <div class="productImage">
-
-                    </div>
-                    <div class="productInfo">
-
-                    </div>
-                    <div class="productPrice-Add">
-                        <div class="price">
-
-                        </div>
-                        <div class="addButton">
-                            <button class="priceButton">
-                                <a>add</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="productContainer">
-                    <div class="productImage">
-
-                    </div>
-                    <div class="productInfo">
-
-                    </div>
-                    <div class="productPrice-Add">
-                        <div class="price">
-
-                        </div>
-                        <div class="addButton">
-                            <button class="priceButton">
-                                <a>add</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="productContainer">
-                    <div class="productImage">
-
-                    </div>
-                    <div class="productInfo">
-
-                    </div>
-                    <div class="productPrice-Add">
-                        <div class="price">
-
-                        </div>
-                        <div class="addButton">
-                            <button class="priceButton">
-                                <a>add</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="productContainer">
-                    <div class="productImage">
-
-                    </div>
-                    <div class="productInfo">
-
-                    </div>
-                    <div class="productPrice-Add">
-                        <div class="price">
-
-                        </div>
-                        <div class="addButton">
-                            <button class="priceButton">
-                                <a>add</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="shoppingCartContainer">
                 <div class="shoppingCart">
                     <div class="shoppingCartTitle">
