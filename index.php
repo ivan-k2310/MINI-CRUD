@@ -17,7 +17,7 @@
                 <div class="container">
             <!-- info over site en restaurant -->
             <div class="textWelcome">
-                
+            <p>this is the legendary amog us card use it to get some bitches</p>
             </div>
         </div>
     </body>
