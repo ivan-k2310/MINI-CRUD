@@ -1,0 +1,105 @@
+@media only screen and (max-width: 400px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar {
+    margin-top: 50px;
+    width: 100%;
+    height: 5vh;
+  }
+  .logoOrName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin-left: 35px;
+    height: 100%;
+  }
+
+  .navSpaceBetween {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+  }
+
+  .navLinkBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    height: 100%;
+  }
+
+  .navBoxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 33%;
+  }
+
+  li,
+  a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    color: ivory;
+  }
+
+  .title {
+    transition: 0.5s;
+    font-size: 45px;
+    color: var(--main);
+  }
+
+  /* CONTACT PAGE */
+  .contactContainer {
+    justify-content: none;
+
+    align-items: none;
+  }
+
+  #mainContact {
+    display: flex;
+    background-image: url(https://images.pexels.com/photos/10692504/pexels-photo-10692504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+  }
+  .emptySpace {
+    display: none;
+  }
+  .emptyTextBoxSpace {
+    display: none;
+  }
+
+  .ContactTextBox {
+    margin-top: 175px;
+    height: auto;
+    width: 100%;
+  }
+  .city {
+    font-size: 45px;
+  }
+  .generalInfo {
+    color: ivory;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 8.5%;
+  }
+
+  .splitGeneralInfo {
+    width: 50%;
+    height: 100%;
+  }
+
+  .city,
+  .cityTitle,
+  .generalInfo {
+    margin-left: 15px;
+  }
+}

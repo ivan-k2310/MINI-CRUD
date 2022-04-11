@@ -28,7 +28,7 @@
                 ?>
                     <div class="productContainer">
                         <div class="productImage">
-                            <img src="img/N<?php echo $res['Image']; ?>" alt="">
+                            <img class="productImages" src="img/<?php echo $res['Image']; ?>" alt="">
                         </div>
                         <div class="productInfo">
                             <p class="about"> 
