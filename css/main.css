@@ -347,9 +347,8 @@ form {
 }
 
 .menuEmptyspace {
-  width: 20%;
+  width: 22.5%;
   height: auto;
-  background-color: salmon;
 }
 
 .itemsContainer {
@@ -360,7 +359,6 @@ form {
   flex-wrap: wrap;
   width: 55%;
   margin-top: 30px;
-  background-color: #f4ead5;
 }
 
 .productContainer {
@@ -369,34 +367,36 @@ form {
 
   width: 30%;
   height: 450px;
-  background-color: #e94e77;
 }
 
 .productImage {
-  height: auto;
-  width: auto;
-  background-color: #c6e5d9;
+  height: 250px;
+  width: 250px;
 }
 
 .productImages {
-  height: 45%;
-  width: auto;
-  background-color: #c6e5d9;
+  height: 250px;
+  width: 250px;
 }
 
 .productInfo {
-  height: 35%;
+  height: auto;
   width: auto;
   margin: 10px;
-  background-color: yellowgreen;
+  color: ivory;
+}
+
+.nameProduct {
+  font-size: 30px;
+  font-weight: 900;
 }
 
 .productPrice-Add {
   display: flex;
   flex-direction: row;
-  height: 20%;
+  justify-content: space-around;
+  height: auto;
   width: auto;
-  background-color: aquamarine;
 }
 
 .price {
@@ -405,7 +405,6 @@ form {
   align-items: center;
   height: 100%;
   width: 50%;
-  background-color: yellow;
 }
 
 .addButton {
@@ -413,8 +412,7 @@ form {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 50%;
-  background-color: darkgoldenrod;
+  width: 40%;
 }
 
 .priceButton {
@@ -434,7 +432,6 @@ form {
   justify-content: center;
   width: 25%;
   height: auto;
-  background-color: azure;
   margin-top: 30px;
 }
 
@@ -525,23 +522,27 @@ form {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  height: 85vh;
-  width: auto;
+  height: auto;
+  /* width: auto; */
   padding: 20px;
 }
 
 table.blueTable {
   border: 1px solid #1c6ea4;
   background-color: #eeeeee;
-  width: 100%;
-  text-align: left;
+  width: 75%;
+
   border-collapse: collapse;
+  table-layout: fixed;
 }
 table.blueTable td,
 table.blueTable th {
   border: 1px solid #aaaaaa;
   padding: 3px 2px;
+  text-align: center;
+  height: 35px;
 }
+
 table.blueTable tbody td {
   font-size: 13px;
   color: #333333;
