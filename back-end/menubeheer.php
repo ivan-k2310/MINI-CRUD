@@ -1,5 +1,5 @@
 <?php
-    require "../include/session.php";
+Session_start();
     include "../include/rightschecker.php";
     include "header.php";
     $sql = "SELECT * FROM products";

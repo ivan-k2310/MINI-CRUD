@@ -1,5 +1,5 @@
     <?php
-        require "../include/session.php";
+    Session_start();
         include "../include/rightschecker.php";
        include_once "header.php";
        if(isset($_POST['getal'])){

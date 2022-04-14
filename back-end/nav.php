@@ -12,7 +12,7 @@
       <li><a href="../contact.php">contact</a></li>
     </div>
     <div class="navBoxes">
-      <li><a href="../loginpage.php">login</a></li>
+            <li><a href="ogout.php">logout</a></li>
     </div>
   </div>
 </nav>

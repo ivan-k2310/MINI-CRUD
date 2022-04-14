@@ -1,5 +1,5 @@
     <?php
-        require "include/session.php";
+    Session_start();
        include_once "include/header.php";            
     ?>
     

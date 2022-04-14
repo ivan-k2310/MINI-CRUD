@@ -1,5 +1,7 @@
     <?php
-        require "include/session.php";
+    Session_start();
+        $_SESSION['logincounter'] = 1;
+        $_SESSION['rights'] = null;
        include_once "include/header.php";
         $sql = "SELECT * FROM users WHERE username = :username AND password = :password";
         $stmt = $connect->prepare($sql);
@@ -7,7 +9,6 @@
         $stmt->bindParam(":password", $_POST['password']);
         $stmt->execute();
         $result = $stmt->fetchAll();
-        var_dump($result);
         if (isset($_POST['submit'])){
             if(count($result) > 0){
                 $_SESSION['rights'] = 1;

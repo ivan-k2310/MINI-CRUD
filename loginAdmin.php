@@ -1,5 +1,7 @@
     <?php
-        require "include/session.php";
+    Session_start();
+        $_SESSION['logincounter'] = 1;
+        $_SESSION['rights'] = null;
        include_once "include/header.php";
         $sql = "SELECT * FROM admin WHERE username = :username AND password = :password";
         $stmt = $connect->prepare($sql);
