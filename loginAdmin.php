@@ -10,7 +10,7 @@
         var_dump($result);
         if (isset($_POST['submit'])){
             if(count($result) > 0){
-                $_SESSION['rights'] = 0;
+                $_SESSION['rights']= 2;
                 header("Location: back-end/dashboard.php");
             } else {
                 echo "username niet gevonden";

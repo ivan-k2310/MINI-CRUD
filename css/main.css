@@ -321,48 +321,8 @@ input {
   width: 100%;
   background-color: #070707;
   display: flex;
+  justify-content: center;
   flex-direction: row;
-}
-
-.productNavbar {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  font-size: 25px;
-  width: 15%;
-  height: 65%;
-  position: fixed;
-  left: 0;
-  display: flex;
-  margin-left: 75px;
-  margin-top: 125px;
-  background-color: var(--main);
-  border-radius: 12.5px;
-  transition: 0.5s;
-  color: ivory;
-  text-decoration: none;
-  border: 2px solid black;
-}
-
-.productNavbarLinks {
-  width: 100%;
-  height: 20%;
-  text-align: center;
-  padding: 35px;
-}
-
-.productNavbar li a:hover {
-  transition: 0.5s;
-  color: var(--primairy);
-  text-decoration: none;
-}
-
-.menuEmptyspace {
-  width: 22.5%;
-  height: auto;
 }
 
 .itemsContainer {
@@ -371,7 +331,7 @@ input {
   justify-content: space-around;
   row-gap: 30px;
   flex-wrap: wrap;
-  width: 55%;
+  width: 70%;
   margin-top: 30px;
 }
 

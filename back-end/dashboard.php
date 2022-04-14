@@ -1,5 +1,6 @@
     <?php
         require "../include/session.php";
+        include "../include/rightschecker.php";
        include_once "header.php";
        if(isset($_POST['getal'])){
             $sql = "SELECT title, artiest, gerne FROM album WHERE ID = :ID";
@@ -23,10 +24,10 @@
                     <a class="navTitle" href="menubeheer.php">menu beheer</a>
                 </div>
                 <div class="navItems" href="#">
-                    <a class="navTitle" >reservations</a>
+                    <a class="navTitle" >work in progress</a>
                 </div>
                 <div class="navItems" href="#">
-                    <a class="navTitle"> example</a>
+                    <a class="navTitle">work in progress</a>
                 </div>
             </div>
         </div>
