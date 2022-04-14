@@ -1,4 +1,5 @@
     <?php
+        require "../include/session.php";
        include_once "header.php";
        if(isset($_POST['getal'])){
             $sql = "SELECT title, artiest, gerne FROM album WHERE ID = :ID";

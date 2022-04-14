@@ -1,4 +1,6 @@
-        <?php 
+        
+        <?php
+        require "include/session.php"; 
         include "include/header.php"
         ?>
 

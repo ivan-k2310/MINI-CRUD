@@ -158,6 +158,16 @@ a {
 }
 
 /* login page css */
+/* useroradmin css */
+.selectLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  margin: 15px;
+}
 #mainLogin {
   display: flex;
   background-image: url(https://images.pexels.com/photos/10692499/pexels-photo-10692499.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
@@ -228,9 +238,13 @@ input {
   background-color: var(--primairy);
 }
 
-form {
-  margin-top: 175px;
+.login {
+  margin-top: 100px;
 }
+
+/* form {
+  margin-top: 175px;
+} */
 /* login page css */
 
 /* contact page css */
@@ -364,7 +378,6 @@ form {
 .productContainer {
   display: flex;
   flex-direction: column;
-
   width: 30%;
   height: 450px;
 }
@@ -461,6 +474,8 @@ form {
 /* dashboard css */
 
 .dashboardContainer {
+  display: flex;
+  flex-direction: column;
   background-color: #070707;
   height: 100vh;
   width: auto;
@@ -470,6 +485,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 25px;
   height: 10%;
   width: 100%;
 }
@@ -531,15 +547,16 @@ table.blueTable {
   border: 1px solid #1c6ea4;
   background-color: #eeeeee;
   width: 75%;
-
   border-collapse: collapse;
   table-layout: fixed;
 }
+
 table.blueTable td,
 table.blueTable th {
   border: 1px solid #aaaaaa;
   padding: 3px 2px;
   text-align: center;
+
   height: 35px;
 }
 
@@ -550,6 +567,7 @@ table.blueTable tbody td {
 table.blueTable tr:nth-child(even) {
   background: #f5dce6;
 }
+
 table.blueTable thead {
   background: #a40000;
   background: -moz-linear-gradient(top, #bb4040 0%, #ad1919 66%, #a40000 100%);
@@ -562,12 +580,14 @@ table.blueTable thead {
   background: linear-gradient(to bottom, #bb4040 0%, #ad1919 66%, #a40000 100%);
   border-bottom: 2px solid #444444;
 }
+
 table.blueTable thead th {
   font-size: 15px;
   font-weight: bold;
   color: #ffffff;
   border-left: 2px solid #d0e4f5;
 }
+
 table.blueTable thead th:first-child {
   border-left: none;
 }
@@ -587,12 +607,15 @@ table.blueTable tfoot {
   background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #d0e4f5 100%);
   border-top: 2px solid #444444;
 }
+
 table.blueTable tfoot td {
   font-size: 14px;
 }
+
 table.blueTable tfoot .links {
   text-align: right;
 }
+
 table.blueTable tfoot .links a {
   display: inline-block;
   background: #1c6ea4;

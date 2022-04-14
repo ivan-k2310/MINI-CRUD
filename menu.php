@@ -1,4 +1,5 @@
         <?php 
+        require "include/session.php";
         include "include/header.php";
             $sql = "SELECT * FROM products";
             $stmt = $connect->prepare($sql);
@@ -7,18 +8,13 @@
         ?>
 <body>
         <?php 
-            include "include/nav.php"
+            include "include/nav.php";
         ?>
+        <div class="titleDashboard">
+            <a class="dashboardTitle">menu</a>
+        </div>
         <div class="menuContainer">
-            <div class="menuNavContainer">
-                <div class="productNavbar">
-                    <li class="ProductNavbarLinks"><a href="#">example</a></li>
-                    <li class="ProductNavbarLinks"><a href="#">example</a></li>
-                    <li class="ProductNavbarLinks"><a href="#">example</a></li>
-                    <li class="ProductNavbarLinks"><a href="#">example</a></li>
-                    <li id="ProductNavbarLinks"><a href="#">example</a></li>
-                </div>
-            </div>
+            
             <div class="menuEmptyspace">
 
             </div>
@@ -40,9 +36,6 @@
                                 <a class="price"> <?php echo $res['Price']; ?></a>
                             </div>
                             <div class="addButton">
-                                <button class="priceButton">
-                                    <a class="buttonString">add</a>
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -50,31 +43,6 @@
                     }
                     ?>
                 </div>
-
-            <div class="shoppingCartContainer">
-                <div class="shoppingCart">
-                    <div class="shoppingCartTitle">
-
-                    </div>
-                    <div class="shoppingCartItems">
-
-                    </div>
-                    <div class="shoppingCartItems">
-                        
-                    </div>
-                    <div class="shoppingInfo">
-                        <div class="totPrice">
-
-                        </div>
-                        <div class="checkoutContainer">
-                             <button>checkout</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            
-
         </div>
         
 </body>

@@ -1,6 +1,7 @@
     <?php
+        require "include/session.php";
        include_once "include/header.php";
-        $sql = "SELECT * FROM admin WHERE username = :username AND password = :password";
+        $sql = "SELECT * FROM users WHERE username = :username AND password = :password";
         $stmt = $connect->prepare($sql);
         $stmt->bindParam(":username", $_POST['username']);
         $stmt->bindParam(":password", $_POST['password']);
@@ -9,8 +10,8 @@
         var_dump($result);
         if (isset($_POST['submit'])){
             if(count($result) > 0){
-                // setcookie("username", $_POST['username'],
-                header("Location: back-end/dashboard.php");
+                $_SESSION['rights'] = 1;
+                header("Location: index.php");
             } else {
                 echo "username niet gevonden";
             }
@@ -24,7 +25,7 @@
         <?php 
             include "include/nav.php"
         ?>
-            <form action="loginpage.php" method="post">
+            <form class="login" action="loginUser.php" method="post">
                 <p id="title-forms-register">login</p>
                 <div>
                     <input class="login-text-box" name="username" type="text" placeholder="username" value="">

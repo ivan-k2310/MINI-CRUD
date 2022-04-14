@@ -102,4 +102,44 @@
   .generalInfo {
     margin-left: 15px;
   }
+  /* menu */
+  .itemsContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .productContainer {
+    display: flex;
+    flex-direction: column;
+
+    width: 250px;
+  }
+  .dashboardTitle {
+    margin-top: 60px;
+  }
+  .menuEmptyspace {
+    display: none;
+  }
+  /* login */
+  .login {
+    margin-top: 100px;
+  }
+
+  .dashboardContainer {
+    height: 550px;
+  }
+
+  .CRUDNavContainer {
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .navItems {
+    display: flex;
+    width: 80%;
+    height: 100px;
+  }
 }

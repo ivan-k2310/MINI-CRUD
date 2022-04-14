@@ -1,4 +1,5 @@
 <?php
+    require "../include/session.php";
     include_once 'header.php';
 
     $sql="SELECT * FROM products WHERE ID = :ID";

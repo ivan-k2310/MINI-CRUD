@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 $host = 'localhost';
 $db = 'sushi place';
 $user = 'root';

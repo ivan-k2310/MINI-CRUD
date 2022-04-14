@@ -1,4 +1,5 @@
 <?php
+    require "../include/session.php";
     include "header.php";
     $sql = "SELECT * FROM products";
     $stmt = $connect->prepare($sql);
