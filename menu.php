@@ -8,7 +8,7 @@
         ?>
 <body>
         <?php 
-            include "include/nav.php";
+            include "include/rightschecker.php";
         ?>
         <div class="titleDashboard">
             <a class="dashboardTitle">menu</a>

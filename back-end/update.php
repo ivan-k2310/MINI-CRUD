@@ -1,6 +1,6 @@
 <?php
 Session_start();
-    include "../include/rightschecker.php";
+
     include_once 'header.php';
 
     $sql="SELECT * FROM products WHERE ID = :ID";
@@ -13,8 +13,8 @@ Session_start();
 
 <body>
 
-    <?php 
-        include "nav.php";
+    <?php    
+        include "rightschecker.php";
     ?>
 
     <div class="menuBeheerContainer">

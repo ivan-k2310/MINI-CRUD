@@ -3,14 +3,14 @@ Session_start();
         // rights: 1 = user, 2 = admin
         // $_SESSION['rights'];
     // require "../include/session.php";
-    include "../include/rightschecker.php";
+
     include_once('header.php');
 ?>
 
 <body>
 
     <?php 
-    include "nav.php"
+    include "rightschecker.php";
 ?>
 
     <div class="menuBeheerContainer">

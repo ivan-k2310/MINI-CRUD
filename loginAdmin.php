@@ -9,17 +9,15 @@
         $stmt->bindParam(":password", $_POST['password']);
         $stmt->execute();
         $result = $stmt->fetchAll();
-        var_dump($result);
         if (isset($_POST['submit'])){
             if(count($result) > 0){
                 $_SESSION['rights']= 2;
                 header("Location: back-end/dashboard.php");
             } else {
-                echo "username niet gevonden";
+                return "Wrong username or password";
             }
         ;
         }
-            
     ?>
     
 <body>
@@ -27,18 +25,19 @@
         <?php 
             include "include/nav.php"
         ?>
-            <form class="login" action="loginAdmin.php" method="post">
+            <form class="login" action="loginAdmin.php" id="loginFormAdmin" method="post">
                 <p id="title-forms-register">login</p>
                 <div>
-                    <input class="login-text-box" name="username" type="text" placeholder="username" value="">
+                    <input class="login-text-box" name="username" type="text" id="usernameAdmin" placeholder="username" value="">
                 </div>
                 <div>
-                    <input class="login-text-box" name="password" type="password" placeholder="enter password" value="">
+                    <input class="login-text-box" name="password" type="password" id="passwordAdmin" placeholder="enter password" value="">
                 </div>
                 <div>
-                    <input class="submit-login" name="submit" type="submit" value="submit">
+                    <input class="submit-login" name="submitAdmin" type="submit" value="submit">
                 </div>
             </form>
+            <script src="js/adminFormValidation.js"></script>
     </main>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 Session_start();
-    include "../include/rightschecker.php";
+    ;
     include "header.php";
     $sql = "SELECT * FROM products";
     $stmt = $connect->prepare($sql);
@@ -12,7 +12,7 @@ Session_start();
 <body>
 
     <?php 
-    include "nav.php"
+    include "rightschecker.php"
 ?>
 
     <div class="menuBeheerContainer">

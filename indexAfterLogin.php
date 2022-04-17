@@ -1,7 +1,6 @@
         <?php
         session_start();
-        $_SESSION['logincounter'];
-        include "include/header.php";
+        include_once "include/header.php";
         ?>
 
     <body>
@@ -9,7 +8,7 @@
             <!-- background image -->
 
             <?php 
-                include "include/nav.php"
+                include "include/rightschecker.php"
             ?>
 
             

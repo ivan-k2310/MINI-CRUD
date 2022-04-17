@@ -1,6 +1,6 @@
     <?php
     Session_start();
-        include "../include/rightschecker.php";
+        
        include_once "header.php";
        if(isset($_POST['getal'])){
             $sql = "SELECT title, artiest, gerne FROM album WHERE ID = :ID";
@@ -13,7 +13,7 @@
 
 <body>
     <?php 
-            include "nav.php"
+        include "rightschecker.php";
     ?>
         <div class="dashboardContainer">
             <div class="titleDashboard">

@@ -6,7 +6,7 @@
 <body>
     <main id="mainContact">
         <?php 
-            include "include/nav.php"
+            include "include/rightschecker.php"
         ?>
         <div class="contactContainer">
             <div class="emptySpace">
