@@ -1,12 +1,12 @@
     <?php
     Session_start();
-       include "include/header.php"
+       include "../include/header.php"
     ?>
  
 <body>
     <main id="mainContact">
         <?php 
-            include "include/rightschecker.php"
+            include "nav.php"
         ?>
         <div class="contactContainer">
             <div class="emptySpace">

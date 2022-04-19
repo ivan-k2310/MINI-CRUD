@@ -1,10 +1,8 @@
 <?php
 Session_start();
-    ;
     include "header.php";
     $sql = "SELECT * FROM products";
     $stmt = $connect->prepare($sql);
-    // $stmt->bindParam(":ID", $_GET['ID']);
     $stmt->execute();
     $result =$stmt->fetchAll();
 ?>
@@ -31,12 +29,6 @@ Session_start();
                     <th>DELETE</th>
                 </tr>
             </thead>
-            <tfoot>
-                <tr>
-                    <td colspan="5">
-                    </td>
-                </tr>
-            </tfoot>
             <tbody>
                 <?php
                     foreach ($result as $res) {

@@ -1,12 +1,12 @@
     <?php
     Session_start();
-       include_once "include/header.php";            
+       include_once "../include/header.php";            
     ?>
     
 <body>
     <main id="mainLogin">
         <?php 
-            include "include/nav.php"
+            include "nav.php"
         ?>
             <div class="selectLogin">
                 <p id="title-forms-register">login as?</p>

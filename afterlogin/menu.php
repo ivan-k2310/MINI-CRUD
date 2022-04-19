@@ -1,6 +1,6 @@
         <?php 
         Session_start();
-        include "include/header.php";
+        include "../include/header.php";
             $sql = "SELECT * FROM products";
             $stmt = $connect->prepare($sql);
             $stmt->execute();
@@ -8,7 +8,7 @@
         ?>
 <body>
         <?php 
-            include "include/rightschecker.php";
+            include "../include/rightschecker.php";
         ?>
         <div class="titleDashboard">
             <a class="dashboardTitle">menu</a>

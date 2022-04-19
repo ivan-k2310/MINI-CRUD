@@ -1,5 +1,7 @@
 
 <?php
+    include "connection.php";
+
     if(isset($_POST['delete'])){
         $sql = "DELETE FROM products WHERE ID = :ID";
         $stmt = $connect->prepare($sql);

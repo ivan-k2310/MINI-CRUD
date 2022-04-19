@@ -16,10 +16,10 @@ if($_SESSION['logincounter'] == 1){
             <li><a href="contact.php">contact</a></li>
           </div>
           <div class="navBoxes">
-            <li><a href="back-end/dashboard.php">dashboard</a></li>
+            <li><a href="../back-end/dashboard.php">dashboard</a></li>
           </div>
           <div class="navBoxes">
-            <li><a href="back-end/logout.php">logout</a></li>
+            <li><a href="../back-end/logout.php">logout</a></li>
           </div>
         </div>
       </nav>
@@ -39,7 +39,7 @@ if($_SESSION['logincounter'] == 1){
             <li><a href="contact.php">contact</a></li>
           </div>
           <div class="navBoxes">
-            <li><a href="back-end/logout.php">logout</a></li>
+            <li><a href="../back-end/logout.php">logout</a></li>
           </div>
         </div>
       </nav>

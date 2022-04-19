@@ -56,7 +56,33 @@
     font-size: 45px;
     color: var(--main);
   }
+  /* INDEX PAGE */
 
+  #mainIndex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+  }
+  .textWelcome {
+    text-align: center;
+    width: 100%;
+    margin-top: 200px;
+    margin-left: 0;
+  }
+  .welcomeIndex {
+  }
+  .welcomeText {
+    color: ivory;
+  }
   /* CONTACT PAGE */
   .contactContainer {
     justify-content: none;
@@ -127,6 +153,7 @@
     margin-top: 100px;
   }
 
+  /* dashboard */
   .dashboardContainer {
     height: 550px;
   }
@@ -142,4 +169,46 @@
     width: 80%;
     height: 100px;
   }
+
+  /* dashboard */
+  /* menubeheer */
+  table.blueTable {
+    width: 100%;
+  }
+
+  table.blueTable td,
+  table.blueTable th {
+    height: 45px;
+  }
+  table.blueTable tbody td {
+    font-size: 7px;
+  }
+
+  table.blueTable thead th {
+    font-size: 10px;
+  }
+
+  .update-login {
+    border: 2px solid black;
+    color: black;
+    border-radius: 10px;
+    background-color: var(--quaternary);
+    margin-left: 5px;
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .delete-login {
+    border: 2px solid black;
+    color: ivory;
+    border-radius: 10px;
+    background-color: var(--main);
+    margin-left: 5px;
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+  }
+  /* menubeheer */
+  /* update and create already responsive */
 }

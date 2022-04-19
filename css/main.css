@@ -5,7 +5,6 @@
   --tertairy: #c6e5d9;
   --quaternary: #f4ead5;
 }
-
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -13,10 +12,8 @@
   text-decoration: none;
   font-family: "Roboto", sans-serif;
 }
-
 body {
   width: 100%;
-
   background-color: #070707;
 }
 main {
@@ -35,7 +32,6 @@ nav {
   flex-direction: row;
   align-items: center;
 }
-
 .navbar {
   margin-top: 50px;
   width: 100%;
@@ -48,21 +44,18 @@ nav {
   width: 25%;
   height: 100%;
 }
-
 .navSpaceBetween {
   display: flex;
   justify-content: center;
   width: 45%;
   height: 100%;
 }
-
 .navLinkBox {
   display: flex;
   align-items: center;
   width: 30%;
   height: 100%;
 }
-
 .navBoxes {
   display: flex;
   justify-content: center;
@@ -70,7 +63,6 @@ nav {
   height: 100%;
   width: 33%;
 }
-
 li,
 a {
   text-decoration: none;
@@ -78,34 +70,29 @@ a {
   font-size: 20px;
   color: ivory;
 }
-
 /* navbarHover */
 .navbar li a {
   transition: 0.5s;
   color: var(--ivory);
   text-decoration: none;
 }
-
 .navbar li a:hover {
   transition: 0.5s;
   transform: scale();
   color: var(--primairy);
 }
-
 .backgroundContainer {
   display: flex;
   align-items: center;
   width: 100%;
   height: 95vh;
 }
-
 .contentBox {
   margin-left: 100px;
   margin-top: 50px;
   height: 90vh;
   width: 40%;
 }
-
 .contenBoxTitle {
   display: flex;
   width: 100%;
@@ -113,26 +100,22 @@ a {
   margin: 15px;
   margin-left: 230px;
 }
-
 .title {
   transition: 0.5s;
   font-size: 50px;
   color: var(--main);
 }
-
 .title:hover {
   transition: 0.5s;
   transform: scale();
   color: var(--primairy);
 }
-
 .contentBoxTextBox {
   width: 100%;
   height: 90%;
   margin: 15px;
   font-size: 35px;
 }
-
 /* navbarHover */
 /* navbar */
 
@@ -141,22 +124,24 @@ a {
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.imageWelcome {
-  width: 45%;
-  height: 90%;
-  background-color: #e94e77;
 }
 
 .textWelcome {
+  height: 70%;
   width: 45%;
-  height: 90%;
-  background-color: #d68189;
+  margin-top: 100px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
 }
-
+.welcomeIndex {
+  font-size: 35px;
+  color: var(--main);
+  font-weight: 700;
+}
+.welcomeText {
+  font-weight: 900;
+}
 /* login page css */
 /* useroradmin css */
 .selectLogin {
@@ -173,15 +158,12 @@ a {
   background-image: url(https://images.pexels.com/photos/10692499/pexels-photo-10692499.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
   align-items: center;
 }
-
 form {
   align-items: center;
 }
-
 input {
   text-align: center;
 }
-
 #title-forms-register {
   text-align: center;
   margin-bottom: 35px;
@@ -189,24 +171,20 @@ input {
   font-size: 50px;
   color: var(--main);
 }
-
 .radio {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 .radio-names {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 .radio-buttons {
   width: 30px;
   height: 30px;
 }
-
 .login-text-box {
   border: 2px solid black;
   border-radius: 10px;
@@ -214,7 +192,6 @@ input {
   width: 300px;
   height: 40px;
 }
-
 .submit-login {
   border: 2px solid black;
   color: ivory;
@@ -225,26 +202,19 @@ input {
   height: 40px;
   cursor: pointer;
 }
-
 .submit-login {
   transition: 0.5s;
   background-color: var(--main);
   text-decoration: none;
 }
-
 .submit-login:hover {
   transition: 0.5s;
   transform: scale();
   background-color: var(--primairy);
 }
-
 .login {
   margin-top: 100px;
 }
-
-/* form {
-  margin-top: 175px;
-} */
 /* login page css */
 
 /* contact page css */
@@ -259,34 +229,28 @@ input {
   display: flex;
   background-image: url(https://images.pexels.com/photos/10692504/pexels-photo-10692504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
-
 .emptySpace {
   width: 60%;
   height: 100%;
 }
-
 .ContactTextBox {
   width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-
 .emptyTextBoxSpace {
   width: 100%;
   height: 5%;
 }
-
 .cityTitle {
   color: ivory;
   display: flex;
   align-items: flex-start;
 }
-
 .city {
   font-size: 60px;
 }
-
 .generalInfo {
   color: ivory;
   display: flex;
@@ -294,22 +258,18 @@ input {
   width: 80%;
   height: 5%;
 }
-
 .splitGeneralInfo {
   width: 50%;
   height: 100%;
 }
-
 .city,
 .cityTitle,
 .generalInfo {
   margin-left: 15px;
 }
-
 #borderContact {
   border-bottom: 1px solid ivory;
 }
-
 #borderContactDelivery {
   border-bottom: 1px solid ivory;
   margin-top: 10px;
@@ -324,7 +284,6 @@ input {
   justify-content: center;
   flex-direction: row;
 }
-
 .itemsContainer {
   display: flex;
   flex-direction: row;
@@ -334,36 +293,30 @@ input {
   width: 70%;
   margin-top: 30px;
 }
-
 .productContainer {
   display: flex;
   flex-direction: column;
   width: 30%;
   height: 450px;
 }
-
 .productImage {
   height: 250px;
   width: 250px;
 }
-
 .productImages {
   height: 250px;
   width: 250px;
 }
-
 .productInfo {
   height: auto;
   width: auto;
   margin: 10px;
   color: ivory;
 }
-
 .nameProduct {
   font-size: 30px;
   font-weight: 900;
 }
-
 .productPrice-Add {
   display: flex;
   flex-direction: row;
@@ -371,7 +324,6 @@ input {
   height: auto;
   width: auto;
 }
-
 .price {
   display: flex;
   justify-content: center;
@@ -379,7 +331,6 @@ input {
   height: 100%;
   width: 50%;
 }
-
 .addButton {
   display: flex;
   justify-content: center;
@@ -387,7 +338,6 @@ input {
   height: 100%;
   width: 40%;
 }
-
 .priceButton {
   width: 75px;
   height: 35px;
@@ -395,11 +345,9 @@ input {
   border: 2px solid black;
   border-radius: 12.5px;
 }
-
 .buttonString {
   font-size: 15px;
 }
-
 .shoppingCartContainer {
   display: flex;
   justify-content: center;
@@ -407,7 +355,6 @@ input {
   height: auto;
   margin-top: 30px;
 }
-
 .shoppingCart {
   display: flex;
   flex-direction: column;
@@ -420,13 +367,11 @@ input {
   width: auto;
   background-color: yellow;
 }
-
 .shoppingCartItems {
   height: 75px;
   width: auto;
   background-color: chocolate;
 }
-
 .shoppingInfo {
   height: 50px;
 }
@@ -440,7 +385,6 @@ input {
   height: 100vh;
   width: auto;
 }
-
 .titleDashboard {
   display: flex;
   justify-content: center;
@@ -449,12 +393,10 @@ input {
   height: 10%;
   width: 100%;
 }
-
 .dashboardTitle {
   font-size: 60px;
   color: #e94e77;
 }
-
 .CRUDNavContainer {
   display: flex;
   justify-content: space-around;
@@ -463,7 +405,6 @@ input {
   height: 90%;
   width: 100%;
 }
-
 .navItems {
   display: flex;
   justify-content: center;
@@ -473,24 +414,20 @@ input {
   background-color: ivory;
   box-shadow: rgba(255, 255, 255, 0.9) 0px 2px 8px 0px;
 }
-
 .navTitle {
   font-size: 45px;
   color: #e94e77;
 }
-
 .navItems {
   transition: 0.5s;
   color: var(--secondary);
   text-decoration: none;
 }
-
 .navItems:hover {
   transition: 0.5s;
   height: 65%;
   width: 30%;
 }
-
 /* dashboard css */
 /* menubeheer */
 .menuBeheerContainer {
@@ -502,7 +439,6 @@ input {
   /* width: auto; */
   padding: 20px;
 }
-
 table.blueTable {
   border: 1px solid #1c6ea4;
   background-color: #eeeeee;
@@ -510,7 +446,6 @@ table.blueTable {
   border-collapse: collapse;
   table-layout: fixed;
 }
-
 table.blueTable td,
 table.blueTable th {
   border: 1px solid #aaaaaa;
@@ -519,7 +454,6 @@ table.blueTable th {
 
   height: 35px;
 }
-
 table.blueTable tbody td {
   font-size: 13px;
   color: #333333;
@@ -527,7 +461,6 @@ table.blueTable tbody td {
 table.blueTable tr:nth-child(even) {
   background: #f5dce6;
 }
-
 table.blueTable thead {
   background: #a40000;
   background: -moz-linear-gradient(top, #bb4040 0%, #ad1919 66%, #a40000 100%);
@@ -540,50 +473,15 @@ table.blueTable thead {
   background: linear-gradient(to bottom, #bb4040 0%, #ad1919 66%, #a40000 100%);
   border-bottom: 2px solid #444444;
 }
-
 table.blueTable thead th {
   font-size: 15px;
   font-weight: bold;
   color: #ffffff;
   border-left: 2px solid #d0e4f5;
 }
-
 table.blueTable thead th:first-child {
   border-left: none;
 }
-
-table.blueTable tfoot {
-  font-size: 14px;
-  font-weight: bold;
-  color: #ffffff;
-  background: #d0e4f5;
-  background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #d0e4f5 100%);
-  background: -webkit-linear-gradient(
-    top,
-    #dcebf7 0%,
-    #d4e6f6 66%,
-    #d0e4f5 100%
-  );
-  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #d0e4f5 100%);
-  border-top: 2px solid #444444;
-}
-
-table.blueTable tfoot td {
-  font-size: 14px;
-}
-
-table.blueTable tfoot .links {
-  text-align: right;
-}
-
-table.blueTable tfoot .links a {
-  display: inline-block;
-  background: #1c6ea4;
-  color: #ffffff;
-  padding: 2px 8px;
-  border-radius: 5px;
-}
-
 .createContainer {
   display: flex;
   justify-content: center;
@@ -592,7 +490,6 @@ table.blueTable tfoot .links a {
   height: 50%;
   width: auto;
 }
-
 .update-login {
   border: 2px solid black;
   color: black;
@@ -603,13 +500,6 @@ table.blueTable tfoot .links a {
   height: 40px;
   cursor: pointer;
 }
-
-.update-login {
-  transition: 0.5s;
-  background-color: var(--quaternary);
-  text-decoration: none;
-}
-
 .update-login:hover {
   transition: 0.5s;
   transform: scale();
@@ -625,19 +515,11 @@ table.blueTable tfoot .links a {
   height: 40px;
   cursor: pointer;
 }
-
-.delete-login {
-  transition: 0.5s;
-  background-color: var(--main);
-  text-decoration: none;
-}
-
 .delete-login:hover {
   transition: 0.5s;
   transform: scale();
   background-color: var(--primairy);
 }
-
 .smallLink {
   font-size: 30px;
   color: #e94e77;
@@ -646,17 +528,14 @@ table.blueTable tfoot .links a {
   transition: 00.5s;
   color: #e63766;
 }
-
 .createLink {
   font-size: 45px;
   color: #e94e77;
 }
-
 .createLink:hover {
   transition: 00.5s;
   color: #e63766;
 }
-
 .linkUpdate {
   font-size: 13px;
   color: #e94e77;
