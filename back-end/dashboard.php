@@ -10,7 +10,6 @@
             $result =$stmt->fetchAll();
        }  
     ?>
-
 <body>
     <?php 
         include "rightschecker.php";

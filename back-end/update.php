@@ -1,22 +1,16 @@
 <?php
-Session_start();
-
+    Session_start();
     include_once 'header.php';
-
     $sql="SELECT * FROM products WHERE ID = :ID";
     $stmt = $connect->prepare($sql);
     $stmt->bindParam(":ID", $_POST['menuID']);
     $stmt->execute();
     $result = $stmt->fetch();
-
 ?>
-
 <body>
-
     <?php    
         include "rightschecker.php";
     ?>
-
     <div class="menuBeheerContainer">
         <div class="createContainer">
             <div class="titleDashboard">
@@ -48,5 +42,4 @@ Session_start();
             <a class="smallLink" href="menubeheer.php">back</a>
         </div>
 </body>
-
 </html>
