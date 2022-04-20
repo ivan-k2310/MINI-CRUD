@@ -1,10 +1,7 @@
 <?php
 Session_start();
-        // rights: 1 = user, 2 = admin
-        // $_SESSION['rights'];
-    // require "../include/session.php";
-
     include_once('header.php');
+    
 ?>
 
 <body>
