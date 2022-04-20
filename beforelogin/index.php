@@ -3,7 +3,7 @@
         ?>
 
     <body>
-        <main>
+        <main id="mainIndex">
             <!-- background image -->
             <?php 
                 include "nav.php"

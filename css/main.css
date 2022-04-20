@@ -284,6 +284,26 @@ input {
   justify-content: center;
   flex-direction: row;
 }
+.titleBox {
+  width: 70%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleMenu {
+  margin-left: 260px;
+  font-size: 60px;
+  color: #e94e77;
+}
+.titleMenuBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  height: 10%;
+  width: 100%;
+}
 .search {
   padding: 6px;
   border: none;
@@ -291,6 +311,7 @@ input {
   margin-right: 16px;
   font-size: 17px;
 }
+
 .submit-search {
   border: 2px solid black;
   color: ivory;
