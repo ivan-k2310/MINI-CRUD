@@ -284,6 +284,54 @@ input {
   justify-content: center;
   flex-direction: row;
 }
+.titleBox {
+  width: 70%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleMenu {
+  margin-left: 260px;
+  font-size: 60px;
+  color: #e94e77;
+}
+.titleMenuBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  height: 10%;
+  width: 100%;
+}
+.search {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.submit-search {
+  border: 2px solid black;
+  color: ivory;
+  border-radius: 10px;
+  background-color: var(--main);
+  margin-left: 5px;
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+}
+.submit-search {
+  transition: 0.5s;
+  background-color: var(--main);
+  text-decoration: none;
+}
+.submit-search:hover {
+  transition: 0.5s;
+  transform: scale();
+  background-color: var(--primairy);
+}
 .itemsContainer {
   display: flex;
   flex-direction: row;

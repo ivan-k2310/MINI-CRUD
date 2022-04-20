@@ -135,7 +135,15 @@
     align-items: center;
     width: 100%;
   }
+  .titleMenu {
+    margin-left: 0;
+  }
 
+  .titleMenuBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .productContainer {
     display: flex;
     flex-direction: column;

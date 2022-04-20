@@ -1,8 +1,14 @@
         <?php 
         Session_start();
         include "../include/header.php";
-            $sql = "SELECT * FROM products";
-            $stmt = $connect->prepare($sql);
+            if(isset($_GET['search']) && !empty($_GET['search'])){
+                $sql = "SELECT * FROM `products` WHERE `Name` LIKE CONCAT('%', :Name, '%')";
+                $stmt = $connect->prepare($sql);
+                $stmt->bindParam(':Name', $_GET['search']);
+            }else {
+                $sql = "SELECT * FROM products";
+                $stmt = $connect->prepare($sql);
+            }
             $stmt->execute();
             $result =$stmt->fetchAll();
         ?>
@@ -10,8 +16,14 @@
         <?php 
             include "nav.php";
         ?>
-        <div class="titleDashboard">
-            <a class="dashboardTitle">menu</a>
+        <div class="titleMenuBox">
+            <div class="titleBox">
+                <a class="titleMenu">menu</a>
+            </div>
+            <form class="searchBar" action="menu.php" method="GET">
+                <input class="search" type="text" name="search" placeholder="search...">
+                <input class="submit-search" type="submit" name="searchButton">
+            </form>
         </div>
         <div class="menuContainer">
             
@@ -24,7 +36,7 @@
                 ?>
                     <div class="productContainer">
                         <div class="productImage">
-                            <img class="productImages" src="img/<?php echo $res['Image']; ?>" alt="">
+                            <img class="productImages" src="../img/<?php echo $res['Image']; ?>" alt="">
                         </div>
                         <div class="productInfo">
                             <p class="nameProduct"> <?php echo $res['Name']; ?></p>
