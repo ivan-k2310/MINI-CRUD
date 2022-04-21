@@ -81,25 +81,6 @@ a {
   transform: scale();
   color: var(--primairy);
 }
-.backgroundContainer {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 95vh;
-}
-.contentBox {
-  margin-left: 100px;
-  margin-top: 50px;
-  height: 90vh;
-  width: 40%;
-}
-.contenBoxTitle {
-  display: flex;
-  width: 100%;
-  height: 10%;
-  margin: 15px;
-  margin-left: 230px;
-}
 .title {
   transition: 0.5s;
   font-size: 50px;
@@ -110,14 +91,6 @@ a {
   transform: scale();
   color: var(--primairy);
 }
-.contentBoxTextBox {
-  width: 100%;
-  height: 90%;
-  margin: 15px;
-  font-size: 35px;
-}
-/* navbarHover */
-/* navbar */
 
 /* container */
 .container {
@@ -215,8 +188,6 @@ input {
 .login {
   margin-top: 100px;
 }
-/* login page css */
-
 /* contact page css */
 .contactContainer {
   width: 100%;
@@ -244,7 +215,7 @@ input {
   height: 5%;
 }
 .cityTitle {
-  color: ivory;
+  color: var(--main);
   display: flex;
   align-items: flex-start;
 }
@@ -274,7 +245,6 @@ input {
   border-bottom: 1px solid ivory;
   margin-top: 10px;
 }
-/* contact page css */
 /* menu page css */
 .menuContainer {
   height: auto;
@@ -311,7 +281,6 @@ input {
   margin-right: 16px;
   font-size: 17px;
 }
-
 .submit-search {
   border: 2px solid black;
   color: ivory;
@@ -423,9 +392,7 @@ input {
 .shoppingInfo {
   height: 50px;
 }
-/* menu page css */
 /* dashboard css */
-
 .dashboardContainer {
   display: flex;
   flex-direction: column;
@@ -476,7 +443,6 @@ input {
   height: 65%;
   width: 30%;
 }
-/* dashboard css */
 /* menubeheer */
 .menuBeheerContainer {
   display: flex;
@@ -588,4 +554,3 @@ table.blueTable thead th:first-child {
   font-size: 13px;
   color: #e94e77;
 }
-/* menubeheer */
