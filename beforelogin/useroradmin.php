@@ -2,7 +2,6 @@
     Session_start();
        include_once "../include/header.php";            
     ?>
-    
 <body>
     <main id="mainLogin">
         <?php 

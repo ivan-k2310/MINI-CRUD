@@ -2,7 +2,6 @@
         session_start();
         include_once "../include/header.php";
         ?>
-
     <body>
         <main id="mainIndex">
             <!-- background image -->

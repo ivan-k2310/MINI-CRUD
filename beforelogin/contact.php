@@ -2,7 +2,6 @@
     Session_start();
        include "../include/header.php"
     ?>
- 
 <body>
     <main id="mainContact">
         <?php 
@@ -10,7 +9,6 @@
         ?>
         <div class="contactContainer">
             <div class="emptySpace">
-
             </div>
             <div class="ContactTextBox">
                 <div class="emptyTextBoxSpace"></div>
@@ -47,5 +45,4 @@
         </div>
     </main>
 </body>
-
 </html>

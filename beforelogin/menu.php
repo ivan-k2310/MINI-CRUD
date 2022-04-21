@@ -26,9 +26,7 @@
             </form>
         </div>
         <div class="menuContainer">
-            
             <div class="menuEmptyspace">
-
             </div>
             <div class="itemsContainer">
                 <?php
@@ -41,7 +39,6 @@
                         <div class="productInfo">
                             <p class="nameProduct"> <?php echo $res['Name']; ?></p>
                             <p class="about">    <?php echo $res['About']; ?></p>
-                            
                         </div>
                         <div class="productPrice-Add">
                             <div class="priceItem">
@@ -55,7 +52,6 @@
                     }
                     ?>
                 </div>
-        </div>
-        
+        </div> 
 </body>
 </html>

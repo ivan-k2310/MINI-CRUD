@@ -6,13 +6,10 @@ Session_start();
     $stmt->execute();
     $result =$stmt->fetchAll();
 ?>
-
 <body>
-
     <?php 
     include "rightschecker.php"
-?>
-
+    ?>
     <div class="menuBeheerContainer">
         <div class="titleDashboard">
             <a class="dashboardTitle">menu management</a>
@@ -52,7 +49,6 @@ Session_start();
                                 </form>
                             </td>
                         </tr>
-
                 <?php
                     }
                 ?>
@@ -66,5 +62,4 @@ Session_start();
         </div>
     </div>
 </body>
-
 </html>

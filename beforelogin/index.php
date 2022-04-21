@@ -1,7 +1,6 @@
         <?php
         include "../include/header.php";
         ?>
-
     <body>
         <main id="mainIndex">
             <!-- background image -->

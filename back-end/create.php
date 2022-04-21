@@ -1,21 +1,16 @@
 <?php
 Session_start();
     include_once('header.php');
-    
 ?>
-
 <body>
-
     <?php 
     include "rightschecker.php";
 ?>
-
     <div class="menuBeheerContainer">
         <div class="createContainer">
             <div class="titleDashboard">
                 <a class="dashboardTitle">create</a>
             </div>
-
             <form action="menuAction.php" method="POST" id="createForm">
                 <div>
                     <input class="login-text-box" id="nameCreate" type="text" name="name" placeholder="title"></input>
@@ -40,5 +35,4 @@ Session_start();
         </div>
     </div>
 </body>
-
 </html>

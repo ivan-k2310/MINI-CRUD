@@ -17,10 +17,8 @@
             } else {
                 echo "Wrong username or password";
             }
-        ;
-        }
+            ;}
     ?>
-    
 <body>
     <main id="mainLogin">
         <?php 
